@@ -1,4 +1,4 @@
-# Bluestone onboarding visualizer
+# Bluestone PIM onboarding visualizer
 
 Empty starter for prospect catalog work: browse a local SQLite copy of the source files, propose a **Bluestone PIM** tree, then sync into TEST.
 
@@ -15,11 +15,11 @@ pnpm install
 pnpm dev
 ```
 
-Open the URL in the terminal (often `http://localhost:3000`). You should see **Setup**: empty `prospect/`, no `catalog.db`, MAPI keys missing, and whether **Bluestone Fluency** was found on this machine.
+Open the URL in the terminal (often `http://localhost:3000`). You should see **Setup**: empty `prospect/`, no `catalog.db`, MAPI keys missing, and whether **Bluestone PIM Fluency** was found on this machine.
 
-## Bluestone Fluency
+## Bluestone PIM Fluency
 
-The agent needs [Bluestone Fluency](https://github.com/leafleaf90/bluestone-pim-ai-devkit-public) (native FAMILY / GROUP / VARIANT, CLA, VLA, MAPI). This kit does not bundle it — people keep the DevKit in different places, or have not cloned it yet.
+The agent needs [Bluestone PIM Fluency](https://github.com/leafleaf90/bluestone-pim-ai-devkit-public) (native FAMILY / GROUP / VARIANT, CLA, VLA, MAPI). This kit does not bundle it — people keep the DevKit in different places, or have not cloned it yet.
 
 Install the skill:
 
@@ -42,7 +42,7 @@ Or clone [bluestone-pim-ai-devkit-public](https://github.com/leafleaf90/blueston
 3. In Cursor, paste the **Prompt for the agent** from Setup (or the block below). If Fluency is missing, the agent should stop and send you the DevKit GitHub link.
 
 ```
-Look in prospect/ for source files. Use Bluestone Fluency for PIM modeling. If that skill is missing, stop and point me to https://github.com/leafleaf90/bluestone-pim-ai-devkit-public (clone it or run npx skills add leafleaf90/bluestone-pim-ai-devkit-public@bluestone-fluency). Analyze the files, propose a SQLite schema and a Bluestone PIM tree (FAMILY / GROUP / VARIANT / SINGLE, CLA vs VLA, relations vs attributes), then wait for my confirmation. After that, write the converter, load a sample into the local DB, add browse UI, and tell me which API keys to put in .env before we sync.
+Look in prospect/ for source files. Use Bluestone PIM Fluency for PIM modeling. If that skill is missing, stop and point me to https://github.com/leafleaf90/bluestone-pim-ai-devkit-public (clone it or run npx skills add leafleaf90/bluestone-pim-ai-devkit-public@bluestone-fluency). Analyze the files, propose a SQLite schema and a Bluestone PIM tree (FAMILY / GROUP / VARIANT / SINGLE, CLA vs VLA, relations vs attributes), then wait for my confirmation. After that, write the converter, load a sample into the local DB, add browse UI, and tell me which API keys to put in .env before we sync.
 ```
 
 4. Confirm or adjust the proposed schema and PIM model.
