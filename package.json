@@ -1,7 +1,11 @@
 {
   "name": "bluestone-pim-onboarding-visualizer",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

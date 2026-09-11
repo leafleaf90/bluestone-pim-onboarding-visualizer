@@ -15,6 +15,8 @@ pnpm install
 pnpm dev
 ```
 
+`npm install` also works (this repo sets `legacy-peer-deps` so npm does not fail on Drizzle’s optional Effect peer). You need **Node 22.13+** (`node:sqlite`).
+
 Open the URL in the terminal (often `http://localhost:3000`). You should see **Setup**: empty `prospect/`, no `catalog.db`, MAPI keys missing, and whether **Bluestone PIM Fluency** was found on this machine.
 
 ## Bluestone PIM Fluency
