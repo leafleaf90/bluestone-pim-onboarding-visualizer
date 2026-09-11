@@ -9,8 +9,8 @@ Source files and generated DBs stay on your machine. There is no login — bind 
 ## Quick start
 
 ```bash
-git clone https://github.com/leafleaf90/onboarding-visualizer.git
-cd onboarding-visualizer
+git clone https://github.com/leafleaf90/bluestone-pim-onboarding-visualizer.git
+cd bluestone-pim-onboarding-visualizer
 pnpm install
 pnpm dev
 ```
