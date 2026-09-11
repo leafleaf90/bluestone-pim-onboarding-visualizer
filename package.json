@@ -1,0 +1,36 @@
+{
+  "name": "onboarding-visualizer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck",
+    "convert": "node --import tsx scripts/convert.ts",
+    "db:studio": "node --import tsx ./node_modules/drizzle-kit/bin.cjs studio"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.121",
+    "@nuxt/ui": "^4.10.0",
+    "drizzle-orm": "1.0.0-rc.4",
+    "exceljs": "^4.4.0",
+    "nuxt": "^4.5.1",
+    "sax": "^1.6.1",
+    "tailwindcss": "^4.3.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.16.0",
+    "@types/node": "^26.1.2",
+    "@types/sax": "^1.2.7",
+    "drizzle-kit": "1.0.0-rc.4",
+    "eslint": "^10.8.0",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.9"
+  },
+  "packageManager": "pnpm@11.24.0"
+}

@@ -1,0 +1,15 @@
+node_modules
+.nuxt
+.output
+dist
+.DS_Store
+.idea
+*.log
+.env
+.env.*
+!.env.example
+data/*
+!data/.gitkeep
+prospect/**
+!prospect/README.md
+!prospect/.gitkeep

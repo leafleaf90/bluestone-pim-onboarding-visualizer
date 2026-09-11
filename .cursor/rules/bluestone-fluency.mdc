@@ -1,0 +1,29 @@
+---
+description: Append new Bluestone PIM facts to bluestone-fluency when a writable DevKit clone is available; do not leave them in chat.
+alwaysApply: true
+---
+
+# Bluestone Fluency — keep the playbook current
+
+Required skill: **bluestone-fluency** (PIM model, MAPI/PAPI, PBC). Do not invent a generic PIM.
+
+Find it in this order:
+
+1. The installed Cursor/agent skill `bluestone-fluency` (often `~/.cursor/skills/bluestone-fluency`).
+2. `BLUESTONE_FLUENCY_PATH` in `.env` if the user set it.
+3. A local clone of [bluestone-pim-ai-devkit-public](https://github.com/leafleaf90/bluestone-pim-ai-devkit-public) at `skills/bluestone-fluency/`.
+
+If none of those exist, **stop**. Ask the user to install Fluency:
+
+```bash
+npx skills add leafleaf90/bluestone-pim-ai-devkit-public@bluestone-fluency
+```
+
+or clone https://github.com/leafleaf90/bluestone-pim-ai-devkit-public and point Cursor at `skills/bluestone-fluency/`. Do not guess a machine path.
+
+When this session learns a PIM fact (FAMILY/GROUP/VARIANT, CLA, VLA, inherit, mandatory, relation vs attribute, completeness, MAPI, PBC, where a value belongs):
+
+1. Read `SKILL.md` in that folder and the relevant linked file (`model.md`, `gotchas.md`, …).
+2. If it is a durable **generic** rule and the folder is a writable DevKit clone, add it to `model.md` / `gotchas.md` / `recipes.md` / `auth.md`.
+3. If it is tied to a named project, append a dated row to gitignored `insights.internal.md` only when that file’s repo exists. Never put customer names in the public playbook.
+4. Do this before ending the turn. Do not wait to be asked.

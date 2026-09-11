@@ -1,0 +1,12 @@
+---
+description: Onboard from prospect/ using the onboarding-visualizer skill; do not scan other engagements.
+alwaysApply: true
+---
+
+# Onboarding visualizer
+
+When analyzing source files, designing SQLite, converting, proposing a PIM tree, collecting API keys, or syncing to Bluestone:
+
+1. Read `.cursor/skills/onboarding-visualizer/SKILL.md` and follow its phases.
+2. Look only in `prospect/` for data. If it is empty, ask the user where the files are.
+3. Use `server/utils/mapi` for PIM writes. Do not add a second API client.
